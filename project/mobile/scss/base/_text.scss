@@ -1,0 +1,168 @@
+// ==========================================================================
+// Text
+// ==========================================================================
+
+@if $use-grid == true {
+
+  // Proxima Nova
+  @font-face {
+      font-family: 'Proxima Nova';
+      src: url('../public/fonts/proxima-nova/proximanova-light-webfont.eot');
+      src: url('../public/fonts/proxima-nova/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../public/fonts/proxima-nova/proximanova-light-webfont.woff2') format('woff2'),
+           url('../public/fonts/proxima-nova/proximanova-light-webfont.woff') format('woff'),
+           url('../public/fonts/proxima-nova/proximanova-light-webfont.ttf') format('truetype'),
+           url('../public/fonts/proxima-nova/proximanova-light-webfont.svg#proxima_novalight') format('svg');
+      font-weight: 200;
+      font-style: normal;
+
+  }
+  @font-face {
+      font-family: 'Proxima Nova';
+      src: url('../public/fonts/proxima-nova/proximanova-regular-webfont.eot');
+      src: url('../public/fonts/proxima-nova/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../public/fonts/proxima-nova/proximanova-regular-webfont.woff2') format('woff2'),
+           url('../public/fonts/proxima-nova/proximanova-regular-webfont.woff') format('woff'),
+           url('../public/fonts/proxima-nova/proximanova-regular-webfont.ttf') format('truetype'),
+           url('../public/fonts/proxima-nova/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+      font-weight: 400;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Proxima Nova';
+      src: url('../public/fonts/proxima-nova/proximanova-semibold-webfont.eot');
+      src: url('../public/fonts/proxima-nova/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../public/fonts/proxima-nova/proximanova-semibold-webfont.woff2') format('woff2'),
+           url('../public/fonts/proxima-nova/proximanova-semibold-webfont.woff') format('woff'),
+           url('../public/fonts/proxima-nova/proximanova-semibold-webfont.ttf') format('truetype'),
+           url('../public/fonts/proxima-nova/proximanova-semibold-webfont.svg#proxima_novasemibold') format('svg');
+      font-weight: 500;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Proxima Nova';
+      src: url('../public/fonts/proxima-nova/proximanova-bold-webfont.eot');
+      src: url('../public/fonts/proxima-nova/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../public/fonts/proxima-nova/proximanova-bold-webfont.woff2') format('woff2'),
+           url('../public/fonts/proxima-nova/proximanova-bold-webfont.woff') format('woff'),
+           url('../public/fonts/proxima-nova/proximanova-bold-webfont.ttf') format('truetype'),
+           url('../public/fonts/proxima-nova/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+      font-weight: 800;
+      font-style: normal;
+  }
+
+  // Volkswagen
+  @font-face {
+      font-family: 'Volkswagen';
+      src: url('../public/fonts/volkswagen/volkswagen-regular-webfont.eot');
+      src: url('../public/fonts/volkswagen/volkswagen-regular-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../public/fonts/volkswagen/volkswagen-regular-webfont.woff2') format('woff2'),
+           url('../public/fonts/volkswagen/volkswagen-regular-webfont.woff') format('woff'),
+           url('../public/fonts/volkswagen/volkswagen-regular-webfont.ttf') format('truetype'),
+           url('../public/fonts/volkswagen/volkswagen-regular-webfont.svg#volkswagen-regularregular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+
+  }
+  @font-face {
+      font-family: 'Volkswagen';
+      src: url('../public/fonts/volkswagen/volkswagen-bold-webfont.eot');
+      src: url('../public/fonts/volkswagen/volkswagen-bold-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../public/fonts/volkswagen/volkswagen-bold-webfont.woff2') format('woff2'),
+           url('../public/fonts/volkswagen/volkswagen-bold-webfont.woff') format('woff'),
+           url('../public/fonts/volkswagen/volkswagen-bold-webfont.ttf') format('truetype'),
+           url('../public/fonts/volkswagen/volkswagen-bold-webfont.svg#volkswagen-boldregular') format('svg');
+      font-weight: bold;
+      font-style: normal;
+  }
+}
+
+
+// Text alignment
+.text-left {
+  text-align:left;
+}
+.text-center {
+  text-align:center;
+}
+.text-right {
+  text-align:right;
+}
+.text-justify {
+  text-align:justify;
+}
+.text-nowrap {
+  @include text-nowrap;
+}
+
+// Text lower upper capitalize
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+// Font weight
+.weight-light {
+  font-weight:200;
+}
+.weight-normal {
+  font-weight:400;
+}
+.weight-semibold {
+  font-weight:500;
+}
+.weight-bold {
+  font-weight:800;
+}
+
+// Font Smoothing
+.smooth-out {
+  @include font-smoothing(off);
+}
+.smooth-in {
+  @include font-smoothing(on);
+}
+
+// Blockquote
+blockquote {
+  @include font-size(28px);
+  line-height: 32px;
+  font-style: italic;
+  font-family:georgia;
+  letter-spacing: -1px;
+	footer {
+	  @include font-size(16px);
+	  font-family: $base-font-family;
+	  font-style: normal;
+	  letter-spacing: 0.02em;
+	  color:#999;
+	  margin-top:10px
+	}
+
+}
+blockquote.full {
+	width:100%;
+	display:inline-block;
+	margin-left: -$base-spacing-unit;
+    margin-right: -$base-spacing-unit;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+blockquote.right {
+	max-width:320px;
+	float:right;
+	padding:$base-spacing-unit 0 $base-spacing-unit $base-spacing-unit;
+}
+
+blockquote.left {
+	max-width:320px;
+	float:left;
+	padding:$base-spacing-unit $base-spacing-unit $base-spacing-unit 0;
+	text-align:right;
+}

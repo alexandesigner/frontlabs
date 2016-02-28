@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Depths
+   ========================================================================== */
+
+@if $use-depths == true {
+
+	.depth1 {
+
+		box-shadow:1px 2px 3px rgba(#000, 0.17), 0 1px 4px rgba(#000, 0.16);
+			-moz-box-shadow:1px 2px 3px rgba(#000, 0.17), 0 1px 4px rgba(#000, 0.16);
+				-webkit-box-shadow:1px 2px 3px rgba(#000, 0.17), 0 1px 4px rgba(#000, 0.16);
+		// @include box-shadow();
+	}
+	.depth2 {
+		box-shadow:0   5px 6px rgba(#000, 0.15), 0 2px 5px rgba(#000, 0.16);
+			-moz-box-shadow:0   5px 6px rgba(#000, 0.15), 0 2px 5px rgba(#000, 0.16);
+				-webkit-box-shadow:0   5px 6px rgba(#000, 0.15), 0 2px 5px rgba(#000, 0.16);
+	}
+	.depth3 {
+		box-shadow: 0 10px 20px rgba(#000, 0.19), 0  6px  6px rgba(#000, 0.23);
+			-moz-box-shadow: 0 10px 20px rgba(#000, 0.19), 0  6px  6px rgba(#000, 0.23);
+				-webkit-box-shadow: 0 10px 20px rgba(#000, 0.19), 0  6px  6px rgba(#000, 0.23);
+	}
+	.depth4 {
+		box-shadow:0 14px 28px rgba(#000, 0.25), 0 10px 10px rgba(#000, 0.22);
+			-moz-box-shadow:0 14px 28px rgba(#000, 0.25), 0 10px 10px rgba(#000, 0.22);
+				-webkit-box-shadow:0 14px 28px rgba(#000, 0.25), 0 10px 10px rgba(#000, 0.22);
+	}
+	.depth5 {
+		box-shadow:0 19px 38px rgba(#000, 0.30), 0 15px 12px rgba(#000, 0.22);
+			-moz-box-shadow:0 19px 38px rgba(#000, 0.30), 0 15px 12px rgba(#000, 0.22);
+				-webkit-box-shadow:0 19px 38px rgba(#000, 0.30), 0 15px 12px rgba(#000, 0.22);
+	}
+
+	.no-depth {
+		@include box-shadow(0, 0, 0, 0, rgba(0,0,0,0.0));
+	}
+
+}

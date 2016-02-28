@@ -1,0 +1,25 @@
+{
+  "name": "StarterKit",
+  "version": "0.0.1",
+  "authors": [
+    "Allan Alexandre <alexandesigner@gmail.com>"
+  ],
+  "description": "A front-end template that helps you build fast, modern mobile and browser web apps",
+  "main": "app/stylesheets/starterkit.css",
+  "keywords": [
+    "jQuery",
+    "UIKit",
+    "Bootstrap",
+    "Foundation",
+    "Sass",
+    "Less",
+    "Gulp"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "uikit": "^2.25.0",
+    "foundation-sites": "^6.1.2",
+    "bootstrap": "^3.3.6"
+  }
+}

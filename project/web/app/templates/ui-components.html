@@ -1,0 +1,1413 @@
+<!doctype html>
+<html class="no-js" lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+
+  <title>Front-End Lab's v0.1 - UI Components</title>
+
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="favicon.ico" sizes="32x32" type="image/x-icon" />
+
+  <!-- build:css css/styles.css -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <!-- endbuild -->
+
+</head>
+<body>
+
+  <main>
+    <header class="bar bar-positive bar-positive">
+      <div class="row">
+        <h1 class="title-logo">
+          <a href="/">
+            <small>v0.1</small>
+            <img src="../images/logo-white.png" height="52" />
+
+          </a>
+        </h1>
+
+        <nav class="navmenu">
+          <ul class="no-style">
+            <li>
+              <a href="about.html" title="">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="style-guide.html" title="">
+                Style Guide
+              </a>
+            </li>
+            <li class="active">
+              <a href="ui-components.html" title="">
+                UI Components
+              </a>
+            </li>
+            <li>
+              <a href="templates.html" title="">
+                Templates
+              </a>
+            </li>
+            <li>
+              <a href="generator.html" title="">
+                Generator
+              </a>
+            </li>
+          </ul>
+
+          <!-- Github Star -->
+          <div class="button-github"><a class="github-button" href="https://github.com/alexandesigner/starterkit" data-icon="octicon-star" data-count-href="alexandesigner/starterkit/stargazers" data-count-api="/repos/alexandesigner/starterkit#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star ntkme/github-buttons on GitHub">Star</a></div>
+
+
+        </nav>
+
+        <div class="hero">
+          <h2>UI Components</h2>
+          <strong>A Library Components the User Interface</strong>
+        </div>
+
+      </div>
+    </header>
+    <div class="content">
+
+      <div class="row">
+
+        <aside class="sidebar">
+          <div class="sidebar-divider">
+            Base
+          </div>
+          <div class="sidebar-content">
+
+            <nav class="menu v-menu">
+              <a href="#">Header</a>
+              <a href="#" class="activated">Footer</a>
+              <a href="#">Alerts</a>
+              <a href="#">Buttons</a>
+              <a href="#">Badges</a>
+              <a href="#">Breadcrumb</a>
+              <a href="#">Blocks</a>
+              <a href="#">Loadings</a>
+              <a href="#">Lists</a>
+              <a href="#">Panels</a>
+              <a href="#">Pictures</a>
+              <a href="#">Maps</a>
+              <a href="#">Media</a>
+            </nav>
+
+          </div>
+          <div class="sidebar-divider">
+            Navigation
+          </div>
+          <div class="sidebar-content">
+            <nav class="menu v-menu">
+              <a href="#">Dropdown</a>
+              <a href="#">Side Nav</a>
+              <a href="#">Nav Menu</a>
+              <a href="#">Nav Bar</a>
+              <a href="#">Dot Nav</a>
+              <a href="#">Slide Nav</a>
+            </nav>
+          </div>
+          <div class="sidebar-divider">
+            UI Components
+          </div>
+          <div class="sidebar-content">
+            <nav class="menu v-menu">
+              <a href="#">Carousel</a>
+              <a href="#">Collapse</a>
+              <a href="#">Dialogs</a>
+              <a href="#">Popover</a>
+              <a href="#">Tables</a>
+              <a href="#">Tooltips</a>
+            </nav>
+          </div>
+          <div class="sidebar-divider">
+            Form Elements
+          </div>
+          <div class="sidebar-content">
+            <nav class="menu v-menu">
+              <a href="#">Text Fields</a>
+              <a href="#">Select Fields</a>
+              <a href="#">Toggles</a>
+              <a href="#">Slide</a>
+              <a href="#">Upload</a>
+              <a href="#">Date Picker</a>
+              <a href="#">Time Picker</a>
+              <a href="#">Wizard</a>
+            </nav>
+          </div>
+          <div class="sidebar-divider">
+            Others
+          </div>
+          <div class="sidebar-content">
+            <nav class="menu v-menu">
+              <a href="#">Affix</a>
+              <a href="#">Article</a>
+              <a href="#">Gallery</a>
+              <a href="#">Social Media</a>
+            </nav>
+          </div>
+        </aside>
+        <div class="container">
+          <header class="top-container">
+            <h1 class="top-container-title">
+              The various elements
+              <!-- for forms -->
+            </h1>
+            <p class="muted">Here you will find various elements to use in your app, Web site or system. Text fields, toggles, slides, uploads ...</p>
+
+
+            <!-- Header -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Header
+                </h1>
+              </header>
+
+              <div class="box-container">
+
+                <!-- Bar Default -->
+                <header class="bar">
+
+                  <div class="bar-content">
+
+                    <h1 class="title title-left">
+                      <a href="#">Page Template</a>
+                    </h1>
+
+                    <div class="bar-left">
+
+                      <button type="button" class="button button-clear">
+                        <i class="icon-left-2"></i>
+                      </button>
+
+                    </div>
+
+                    <div class="bar-right">
+
+                      <div class="search-bar">
+                        <input id="input-search" class="input-field" type="search" name="input-search" placeholder="Search" />
+                        <button type="submit" class="button button-clear button-search">
+                          <i class="icon-search"></i>
+                        </button>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </header>
+
+                <!-- Bar Positive -->
+                <header class="bar bar-positive">
+
+                  <div class="bar-content">
+                    <h1 class="title">
+                      <img src="../images/logo-white.png" />
+                    </h1>
+
+                    <div class="bar-left">
+
+                      <button type="button" class="button button-clear">
+                        <i class="icon-menu-2"></i>
+                      </button>
+
+                    </div>
+
+                    <div class="bar-right">
+
+                      <button type="button" class="button button-clear">
+                        <i class="icon-search"></i>
+                      </button>
+
+                    </div>
+                  </div>
+
+                  <div class="sub-header">
+
+                    <div class="breadcrumb">
+                      <ul class="no-style">
+                        <li>
+                          <a href="#" title="Link">
+                            Link
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" title="Link">
+                            Link
+                          </a>
+                        </li>
+                        <li>
+                            Link
+                        </li>
+                      </ul>
+                  </div>
+
+                  </div>
+
+                </header>
+
+                <!-- Bar Assertive -->
+                <header class="bar bar-assertive">
+
+                  <div class="bar-content">
+                    <h1 class="title">
+                      <img src="../images/logo-white.png" />
+                    </h1>
+
+                    <div class="bar-left">
+
+                      <button type="button" class="button button-clear">
+                        <i class="icon-menu-2"></i>
+                      </button>
+
+                    </div>
+
+                    <div class="bar-right">
+
+                      <button type="button" class="button button-clear">
+                        <i class="icon-search"></i>
+                      </button>
+
+                    </div>
+                  </div>
+
+                  <div class="sub-header">
+
+                    <h2 class="sub-title">
+                      SUB TITLE
+                    </h2>
+
+                  </div>
+
+                </header>
+
+              </div>
+            </section>
+
+            <!-- Footer -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Footer
+                </h1>
+              </header>
+
+              <div class="box-container">
+
+                <!-- Footer Default -->
+                <footer class="footer">
+                   <div class="footer-links">
+                    <ul class="no-style">
+                      <li>
+                        <a href="#" title="">
+                          Link
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" title="">
+                          Link
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" title="">
+                          Link
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" title="">
+                          Link
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <p class="footer-copyright">(c) 2016 - All rights reservated</p>
+                </footer>
+
+                <!-- Footer Default -->
+                <footer class="footer footer-positive">
+                  <img class="footer-logo" src="../images/logo-white.png" height="32" />
+                  <div class="footer-links">
+                    <ul class="no-style">
+                      <li>
+                        <a href="#" title="">
+                          Link
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" title="">
+                          Link
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" title="">
+                          Link
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" title="">
+                          Link
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <p class="footer-copyright">(c) 2016 - All rights reservated</p>
+                </footer>
+
+              </div>
+            </section>
+
+            <!-- Ads Units -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Ads Units
+                </h1>
+              </header>
+
+              <div class="box-container">
+
+                Conteúdo
+
+              </div>
+            </section>
+
+            <!-- Collapse -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Collapse
+                </h1>
+              </header>
+
+              <div class="box-container">
+
+                <div class="collapse" style="margin-bottom:20px;">
+                  <div class="collapse-item">
+                    <input id="collapse-1" type="checkbox" name="collapse-group">
+                    <label for="collapse-1">Label One</label>
+                    <div class="collapse-content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                    </div>
+                  </div>
+                  <div class="collapse-item">
+                    <input id="tab-two" type="checkbox" name="collapse-group">
+                    <label for="tab-two">Label Two</label>
+                    <div class="collapse-content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                    </div>
+                  </div>
+                  <div class="collapse-item">
+                    <input id="tab-three" type="checkbox" name="collapse-group">
+                    <label for="tab-three">Label Three</label>
+                    <div class="collapse-content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="collapse">
+                  <div class="collapse-item">
+                    <input id="tab-four" type="radio" name="collapse-group">
+                    <label for="tab-four">Label One</label>
+                    <div class="collapse-content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                    </div>
+                  </div>
+                  <div class="collapse-item">
+                    <input id="tab-five" type="radio" name="collapse-group">
+                    <label for="tab-five">Label Two</label>
+                    <div class="collapse-content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                    </div>
+                  </div>
+                  <div class="collapse-item">
+                    <input id="tab-six" type="radio" name="collapse-group">
+                    <label for="tab-six">Label Three</label>
+                    <div class="collapse-content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+
+
+            <!-- Pagination -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Pagination
+                </h1>
+              </header>
+
+              <div class="box-container">
+
+                <nav class="pagination align-center">
+                  <ul>
+                    <li>
+                      <a href="#" aria-label="Previous" class="disable">
+                        <i aria-hidden="false" class="icon-angle-left"></i>
+                      </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li class="activated"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                      <a href="#" aria-label="Next" class="active">
+                        <i aria-hidden="true" class="icon-angle-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+
+                <nav class="pagination pagination-rounded">
+                  <ul>
+                    <li>
+                      <a href="#" aria-label="Previous" class="disable">
+                        <i aria-hidden="false" class="icon-angle-left"></i>
+                      </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li class="activated"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                      <a href="#" aria-label="Next" class="active">
+                        <i aria-hidden="true" class="icon-angle-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+
+                <nav class="pagination pagination-clear align-right">
+                  <ul>
+                    <li>
+                      <a href="#" aria-label="Previous" class="disable">
+                        <i aria-hidden="false" class="icon-angle-left"></i>
+                      </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li class="activated"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                      <a href="#" aria-label="Next" class="active">
+                        <i aria-hidden="true" class="icon-angle-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+
+
+                <nav class="pagination">
+                  <ul>
+                    <li>
+                      <a href="#" aria-label="Previous" class="disable">
+                        <i aria-hidden="false" class="icon-angle-left"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <span>2</span>
+                    </li>
+                    <li>
+                      <input type="text" />
+                    </li>
+                    <li>
+                      <span>162</span>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="Next" class="active">
+                        <i aria-hidden="true" class="icon-angle-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+
+              </div>
+            </section>
+
+            <!-- Alerts -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Alerts
+                </h1>
+              </header>
+
+              <div class="box-container">
+
+                <div class="alert">
+                    <button type="button" class="button button-clear close">
+                      <i class="icon-cancel-3"></i>
+                    </button>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                    </p>
+                </div>
+
+                <div class="alert alert-info">
+                    <button type="button" class="button button-clear close">
+                      <i class="icon-cancel-3"></i>
+                    </button>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                    </p>
+                </div>
+
+                <div class="alert alert-error alert-rounded">
+                    <button type="button" class="button button-clear close">
+                      <i class="icon-cancel-3"></i>
+                    </button>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                    </p>
+                </div>
+
+              </div>
+            </section>
+
+            <!-- Article -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Article
+                </h1>
+              </header>
+
+              <div class="box-container">
+
+
+                <article class="article">
+                  <header class="article-header">
+                    <h1 class="article-title">
+                      Article title
+                    </h1>
+                    <small class="article-meta">
+                      Written by User on 22 April 2016. Posted in Blog
+                    </small>
+                    <p class="article-lead">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <hr />
+                  </header>
+                  <div class="article-content">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                      <a href="#">Read more.</a>
+                    </p>
+                  </div>
+                </article>
+
+
+                <strong>Get code</strong>
+                <pre><code class="xml"><span class="elements">&lt;article class="article"&gt;
+  &lt;header class="article-header"&gt;
+    &lt;h1 class="article-title"&gt;...&lt;/h1&gt;
+    &lt;small class="article-meta"&gt;...&lt;/small&gt;
+    &lt;p class="article-lead"&gt;...&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;div class="article-content"&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</span></code></pre>
+
+              </div>
+
+            </section>
+
+            <!-- Buttons -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Buttons
+                </h1>
+              </header>
+
+              <div class="box-container">
+
+                <button type="button" class="button">Button Default</button>
+
+                <a href="javascript:;" class="button button-rounded button-info">Button Info</a>
+
+                <a href="javascript:;" class="button button-circle button-assertive">
+                  <i class="icon-star-2"></i>
+                </a>
+
+                <button type="button" class="button button-circle button-error">
+                  <i class="icon-cancel-2"></i>
+                </button>
+
+                <button type="button" class="button button-circle button-success">
+                  <i class="icon-ok-1"></i>
+                </button>
+
+                <button type="button" class="button button-icon button-clear">
+                  <i class="icon-bell"></i>
+                  Button default
+                </button>
+
+                <button type="button" class="button button-icon button-error">
+                  <i class="icon-bell"></i>
+                  Button default
+                </button>
+
+                <div class="social">
+                  <button type="button" class="button button-circle bg-facebook">
+                    <i class="icon-facebook-rect"></i>
+                  </button>
+                  <button type="button" class="button button-circle bg-twitter">
+                    <i class="icon-twitter-bird"></i>
+                  </button>
+                  <button type="button" class="button button-circle bg-google">
+                    <i class="icon-gplus"></i>
+                  </button>
+                </div>
+
+                <strong>Get code</strong>
+                <pre><code class="xml"><span class="elements">&lt;button type="button" class="button&gt;Button Default&lt;/button&gt;
+&lt;a href="#" class="button&gt;Button Default&lt;/a&gt;
+&lt;button type="button" class="button button-circle button-error"&gt;
+  &lt;i class="icon-cancel-2"&gt;&lt;/i&gt;
+&lt;/button&gt;</span></code></pre>
+
+              </div>
+            </section>
+
+            <!-- Badges -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Badges
+                </h1>
+              </header>
+
+              <div class="box-container">
+
+                <span class="badge badge-notification">
+                  2
+                </span>
+
+                <span class="badge badge-info">
+                  Badge
+                </span>
+
+                <span class="badge badge-success badge-rounded">
+                  Badge Rounded
+                </span>
+
+                <span class="badge badge-error">
+                  1
+                </span>
+
+                <strong>Get code</strong>
+                <pre><code class="xml"><span class="elements">&lt;span class="badge"&gt;12&lt;/span&gt;</span></code></pre>
+
+              </div>
+            </section>
+
+             <!-- Breadcrumb -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Breadcrumb
+                </h1>
+              </header>
+
+              <div class="box-container">
+
+                <!-- Breadcrumb Default -->
+                <div class="breadcrumb">
+                    <ul class="no-style">
+                      <li>
+                        <a href="#" title="Link">
+                          Link
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" title="Link">
+                          Link
+                        </a>
+                      </li>
+                      <li>
+                          Link
+                      </li>
+                    </ul>
+                </div>
+
+                <strong>Get code</strong>
+                <pre><code class="xml"><span class="elements">&lt;div class="breadcrumb"&gt;
+  &lt;ul class="no-style"&gt;
+    &lt;li&gt;
+      &lt;a href="#" title="Link"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="#" title="Link"&gt;Link&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      Link
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</span></code></pre>
+
+              </div>
+            </section>
+
+            <!-- Panels -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Panels
+                </h1>
+              </header>
+
+              <div class="box-container">
+
+                <section class="panel">
+                  <div class="panel-content">
+                    Panel Content
+                  </div>
+                </section>
+
+                <section class="panel" style="margin-top:20px;">
+                  <header class="panel-header panel-icon-left panel-icon-right">
+
+                    <h2 class="panel-title">
+                      Panel title
+                    </h2>
+
+                    <div class="panel-header-left">
+                      <button type="button" class="button button-clear">
+                        <i class="icon-menu"></i>
+                      </button>
+                    </div>
+
+                    <div class="panel-header-right">
+                      <button type="button" class="button button-clear">
+                        <i class="icon-export"></i>
+                      </button>
+                      <button type="button" class="button button-clear">
+                        <i class="icon-cog-2"></i>
+                      </button>
+                    </div>
+
+                  </header>
+                  <div class="panel-content">
+                    Panel Content
+                  </div>
+                  <footer class="panel-footer">
+                    Panel Footer
+                  </footer>
+                </section>
+
+
+                <div class="row-flex" style="margin-top:20px;">
+                  <section class="panel col-4">
+                    <header class="panel-header">
+                      <h2 class="panel-title">
+                        Panel title
+                      </h2>
+                      <div class="panel-header-right">
+                        <button type="button" class="button button-clear">
+                          <i class="icon-cancel-1"></i>
+                        </button>
+                      </div>
+                    </header>
+                    <div class="panel-content">
+                      Panel Content
+                    </div>
+                  </section>
+                  <section class="panel col-4">
+                    <header class="panel-header no-padding">
+                      <h2 class="panel-title title-center">
+                        Panel title
+                      </h2>
+                    </header>
+                    <div class="panel-content">
+                      Panel Content
+                    </div>
+                  </section>
+                  <section class="panel col-4">
+                    <header class="panel-header">
+                      <h2 class="panel-title">
+                        Panel title
+                      </h2>
+                    </header>
+                    <div class="panel-content">
+                      Panel Content
+                    </div>
+                  </section>
+                </div>
+
+
+                <div class="placeholder" style="margin-top:20px;">
+                  Placeholder
+                </div>
+
+              </div>
+            </section>
+
+            <!-- Text Fields -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Text Fields
+                </h1>
+              </header>
+
+              <div class="box-container">
+
+                <div class="row-flex">
+                  <div class="col-4">
+
+                    <div class="item-form">
+                      <label class="input-label" for="input-1">E-mail address</label>
+                      <input id="input-1" class="input-field" type="text" name="input-1" data-validate="required email" placeholder="user@example.com" />
+                    </div>
+
+                    <div class="item-form">
+                      <label class="input-label" for="input-2">Password</label>
+                      <input id="input-2" class="input-field" type="password" data-validate="required" name="password" />
+                    </div>
+
+                  </div>
+                  <div class="col-4">
+                    <div class="item-form">
+                      <label class="input-label" for="input-3">E-mail address</label>
+                      <input id="input-3" class="input-field" type="email" name="email" data-validate="required email" placeholder="user@example.com" />
+                    </div>
+
+                    <div class="item-form">
+                      <label class="input-label" for="input-4">Password</label>
+                      <input id="input-4" class="input-field" type="password" data-validate="required" name="password" />
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="item-form">
+                      <label class="input-label" for="input-5">E-mail address</label>
+                      <input id="input-5" class="input-field" type="email" name="email" data-validate="required email" placeholder="user@example.com" />
+                    </div>
+
+                    <div class="item-form">
+                      <label class="input-label" for="input-6">Password</label>
+                      <input id="input-6" class="input-field" type="password" data-validate="required" name="password" />
+                    </div>
+                  </div>
+                </div>
+
+                <strong>Get code</strong>
+                <pre><code class="xml"><span class="elements">&lt;label class="input-label" for="input-1"&gt;Label Input&lt;/label&gt;
+&lt;input id="input-1" class="input-field" type="text" name="input-name" placeholder="Text input" /&gt;
+</span></code></pre>
+
+              </div>
+
+            </section>
+
+            <!-- Checkbox -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Checkbox
+                </h1>
+              </header>
+
+              <div class="box-container">
+
+                <div class="checkbox">
+                  <input id="check1" type="checkbox" name="check" value="check1">
+                  <label for="check1">Checkbox No. 1</label>
+                  <br>
+                  <input id="check2" type="checkbox" name="check" value="check2">
+                  <label for="check2">Checkbox No. 2</label>
+                </div>
+
+
+              </div>
+            </section>
+
+            <!-- Radio -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Radio
+                </h1>
+              </header>
+
+              <div class="box-container">
+
+                <div class="radio">
+                  <input id="male" type="radio" name="gender" value="male">
+                  <label for="male">Male</label>
+                  <input id="female" type="radio" name="gender" value="female">
+                  <label for="female">Female</label>
+                </div>
+
+              </div>
+            </section>
+
+
+            <!-- Toggles -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Toggles
+                </h1>
+              </header>
+
+              <div class="box-container">
+
+                <div class="toggle">
+                  <input id="toggle-1" type="checkbox" class="toggle-input">
+                  <label for="toggle-1" class="toggle-label">Toggle</label>
+                </div>
+                <div class="toggle activated">
+                  <input id="toggle-2" type="checkbox" class="toggle-input">
+                  <label for="toggle-2" class="toggle-label">Toggle</label>
+                </div>
+                <div class="toggle disabled">
+                  <input id="toggle-3" type="checkbox" class="toggle-input">
+                  <label for="toggle-3" class="toggle-label">Toggle</label>
+                </div>
+
+                <strong>Get code</strong>
+                <pre><code class="xml"><span class="elements">&lt;div class="toggle"&gt;
+  &lt;input id="toggle-1" type="checkbox" class="toggle-input"&gt;
+  &lt;label for="toggle-1" class="toggle-label"&gt;Toggle&lt;/label&gt;
+&lt;/div&gt;</span></code></pre>
+
+              </div>
+
+            </section>
+
+            <!-- Radio -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Select text
+                </h1>
+              </header>
+
+              <div class="box-container">
+
+                <div class="select-field">
+                  <select name="select-name" id="select-name">
+                    <option id="1">Select name</option>
+                    <option id="2">Select name</option>
+                    <option id="3">Select name</option>
+                    <option id="4">Select name</option>
+                  </select>
+                </label>
+
+              </div>
+            </section>
+
+            <!-- Pictures -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Pictures
+                </h1>
+              </header>
+
+              <div class="box-container">
+
+                <div class="row-flex">
+                  <figure class="col-4">
+                    <img class="img-circle" src="../images/img1.png" />
+                  </figure>
+                  <figure class="col-4">
+                    <img src="../images/img2.png" />
+                    <figcaption>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </figcaption>
+                  </figure>
+                  <figure class="img-rounded col-4">
+                    <img src="../images/img3.png" />
+                    <figcaption>
+                      <strong>Lorem ipsum dolor sit amet</strong>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </figcaption>
+                  </figure>
+                </div>
+
+              </div>
+            </section>
+
+
+            <!-- Dialogs -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Dialogs
+                </h1>
+              </header>
+
+              <div class="box-container">
+
+                <a href="#dialog1" class="button button-info" data-dialog="modalDialog">Data Dialog</button>
+
+                <a href="#dialog2" class="button button-error">Dialog (Ajax)</a>
+
+                <div id="dialog1" class="overlay">
+                  <div class="dialog">
+                    <h2>Dialog box</h2>
+                    <a class="close" href="#">&times;</a>
+                  </div>
+                </div>
+
+                <div id="dialog2" class="overlay light">
+                  <a class="cancel" href="#"></a>
+                  <div class="dialog">
+                    <h2>Dialog box</h2>
+                    <div class="content">
+                      <p>Click outside the dialog to close.</p>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </section>
+
+
+            <!-- Lists -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Lists
+                </h1>
+              </header>
+
+              <div class="box-container">
+
+                <div class="row-flex">
+                  <div class="col-4">
+                    <div class="list">
+                      <div class="item item-badge">
+                        <div class="item-content">
+                          Item list
+                          <span class="badge badge-info">
+                            Label
+                          </span>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="item-content">
+                          Item list
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="item-content">
+                          Item list
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="item-content">
+                          Item list
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="item-content">
+                          Item list
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="item-content">
+                          Item list
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="list">
+                      <div class="item">
+                        <a href="#" class="item-content">Link item list</a>
+                      </div>
+                      <div class="item">
+                        <a href="#" class="item-content">Link item list</a>
+                      </div>
+                      <div class="item">
+                        <a href="#" class="item-content">Link item list</a>
+                      </div>
+                      <div class="item">
+                        <a href="#" class="item-content">Link item list</a>
+                      </div>
+                      <div class="item">
+                        <a href="#" class="item-content">Link item list</a>
+                      </div>
+                      <div class="item">
+                        <a href="#" class="item-content">Link item list</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-4">
+                    <div class="list">
+                      <div class="item item-avatar">
+                        <div class="item-content">
+                          <img src="../images/avatar.png" />
+                          <h2 class="item-title">Item list with avatar</h2>
+                        </div>
+                      </div>
+                      <div class="item item-avatar">
+                        <div class="item-content">
+                          <img src="../images/avatar.png" />
+                          <h2 class="item-title">Item list with avatar</h2>
+                        </div>
+                      </div>
+                      <div class="item item-avatar">
+                        <a href="#" class="item-content">
+                          <img src="../images/avatar.png" />
+                          <h2 class="item-title">Item list with avatar</h2>
+                        </a>
+                      </div>
+                      <div class="item item-avatar">
+                        <div class="item-content">
+                          <img src="../images/avatar.png" />
+                          <h2 class="item-title">Item list with avatar</h2>
+                          <p class="item-description">Description item list</p>
+                        </div>
+                      </div>
+                      <div class="item item-avatar">
+                        <div class="item-content">
+                          <img src="../images/avatar.png" />
+                          <h2 class="item-title">Item list with avatar</h2>
+                          <p class="item-description">Description item list</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row-flex" style="margin-top:20px;">
+
+                  <div class="col-4">
+                    <ul class="list">
+                      <li class="item">
+                        <a href="#" class="item-content">Link item list</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item-content">Link item list</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item-content">Link item list</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item-content">Link item list</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item-content">Link item list</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+
+              </div>
+            </section>
+
+            <!-- Navigation -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Nav Menu
+                </h1>
+              </header>
+
+              <div class="box-container">
+                <strong style="margin-top:0;margin-bottom:20px;">Nav Vertical</strong>
+                <div class="row-flex">
+                  <div class="col-3">
+                    <nav class="menu v-menu">
+                      <a href="#">Link</a>
+                      <a href="#" class="activated">Link</a>
+                      <a href="#">Link</a>
+                      <a href="#">Link</a>
+                    </nav>
+                  </div>
+                  <div class="col-9">
+                    <nav class="menu v-menu">
+                      <a href="#">Link</a>
+                      <a href="#" class="activated">Link</a>
+                      <a href="#">Link</a>
+                      <a href="#">Link</a>
+                    </nav>
+                  </div>
+                </div>
+                <div class="row-flex" style="margin-top:20px;">
+                  <div class="col-12">
+                    <strong style="margin-top:0;margin-bottom:20px;">Nav Horizontal</strong>
+                    <nav class="menu h-menu">
+                      <a href="#">Link</a>
+                      <a href="#" class="activated">Link</a>
+                      <a href="#">Link</a>
+                      <a href="#">Link</a>
+                    </nav>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+
+
+            <!-- Navigation -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Nav Bar
+                </h1>
+              </header>
+
+              <div class="box-container">
+
+                <nav class="navbar">
+
+                  <h1 class="title">
+                    <img src="../images/logo.png" height="38" />
+                  </h1>
+
+                  <div class="menu h-menu">
+                    <a href="#">Link</a>
+                    <a href="#" class="activated">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                  </div>
+
+                  <div class="search-bar">
+                    <input id="input-search" class="input-field" type="search" name="input-search" placeholder="Search" />
+                    <button type="submit" class="button button-clear button-search">
+                      <i class="icon-search"></i>
+                    </button>
+                  </div>
+                </nav>
+
+                <nav class="navbar">
+
+                  <div class="menu h-menu">
+                    <a href="#">Link</a>
+                    <a href="#" class="activated">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                  </div>
+
+
+                  <div class="pull-right">
+                    <button type="button" class="button button-clear">
+                      <i class="icon-bell"></i>
+                      <span class="badge badge-notification badge-error">3</span>
+                    </button>
+                  </div>
+
+
+
+                </nav>
+
+              </div>
+            </section>
+
+
+            <!-- Tables -->
+            <section class="box">
+
+              <header class="box-header">
+                <h1 class="box-title">
+                  Tables
+                </h1>
+              </header>
+
+              <div class="box-container">
+
+                <table class="bordered hoverable striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">E-mail</th>
+                      <th scope="col">Job role</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Célula 3</td>
+                      <td>Célula 4</td>
+                      <td>Célula 4</td>
+                    </tr>
+                    <tr>
+                      <td>Célula 3</td>
+                      <td>Célula 4</td>
+                      <td>Célula 4</td>
+                    </tr>
+                    <tr>
+                      <td>Célula 3</td>
+                      <td>Célula 4</td>
+                      <td>Célula 4</td>
+                    </tr>
+                    <tr>
+                      <td>Célula 3</td>
+                      <td>Célula 4</td>
+                      <td>Célula 4</td>
+                    </tr>
+                    <tr>
+                      <td>Célula 3</td>
+                      <td>Célula 4</td>
+                      <td>Célula 4</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+              </div>
+            </section>
+
+          </header>
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="content">
+        Front-end Lab's (c) 2016 - All rights reserved.
+      </div>
+    </footer>
+
+  </main>
+
+  <a href="https://github.com/alexandesigner/frontlabs"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+
+  <!-- build:js js/scripts.js -->
+  <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../js/scripts.js"></script>
+  <!-- endbuild -->
+
+</body>
+</html>
