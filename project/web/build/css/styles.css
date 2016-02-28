@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-* StarterKit - v0.0.1
+* Front-End Lab's - v0.0.1
 *
 * Application Core (Styles)
 *
@@ -6438,7 +6438,7 @@ main {
       font-weight: 600; }
   main .buttons-interactions {
     text-align: center;
-    margin-top: -20px; }
+    margin-top: -10px; }
     main .buttons-interactions .button {
       background: #4275F4;
       color: #fff; }
