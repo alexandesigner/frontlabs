@@ -111,11 +111,10 @@
   // Observator =============== //
   gulp.task('watch', function() {
     gulp.watch(paths.html, ['html']);
-    gulp.watch(paths.scripts, ['scripts']);
     gulp.watch(paths.styles, ['styles']);
   });
 
   // Run tasks =============== //
-  gulp.task('default', [ 'html', 'useref', 'imagemin', 'styles', 'fonts', 'watch', 'connect' ]);
+  gulp.task('default', [ 'html', 'useref', 'imagemin', 'styles', 'scripts', 'watch', 'connect' ]);
 
 }(require));
