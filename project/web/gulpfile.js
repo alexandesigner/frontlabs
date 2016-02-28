@@ -60,7 +60,7 @@
   // Imagemin =============== //
   gulp.task('imagemin', function() {
     var  imgSrc = paths.images,
-            imgDst = 'images';
+            imgDst = 'build/images';
     gulp.src(imgSrc)
     .pipe(changed(imgDst))
     .pipe(imagemin())
