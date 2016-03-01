@@ -17,14 +17,16 @@
   var concatFiles = require('gulp-concat');
   var psi = require('psi');
   var changed = require('gulp-changed');
+  var templateCache = require('gulp-angular-templatecache');
+
 
   // URL Site
   var site = 'http://www.frontlabs.com.br';
 
   // Assets Paths
   var paths = {
-    html:    ['app/templates/**/*.html', 'app/index.html'],
-    scripts: ['app/js/scripts.js'],
+    html:    [ 'app/index.html'],
+    scripts: ['app/js/**/*.js', 'app/js/scripts.js'],
     styles:  ['app/src/scss/**/*.scss'],
     images:  ['app/images/**/*']
   };
@@ -54,6 +56,19 @@
   gulp.task('html', function () {
     return gulp.src(paths.html)
     .pipe(connect.reload());
+  });
+
+  // Templates Cache =============== //
+  gulp.task('templates', function () {
+    return gulp.src('app/js/templates/**/*.html')
+    .pipe(templateCache())
+    .pipe(gulp.dest('app/public'))
+  });
+
+  // Public TemplatesCache =============== //
+  gulp.task('public', function () {
+    return gulp.src('app/public/templates.js')
+    .pipe(gulp.dest('build/public'))
   });
 
   // Imagemin =============== //
@@ -114,6 +129,6 @@
   });
 
   // Run tasks =============== //
-  gulp.task('default', [ 'html', 'useref', 'imagemin', 'styles', 'watch', 'connect' ]);
+  gulp.task('default', [ 'html', 'public', 'useref', 'fonts', 'templates', 'imagemin', 'styles', 'watch', 'connect' ]);
 
 }(require));
