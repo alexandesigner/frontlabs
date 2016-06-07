@@ -10,7 +10,7 @@ http://frontlabs.com.br
 $ git clone https://github.com/alexandesigner/frontlabs.git && cd frontlabs
 ```
 
-## Installations
+## Installation
 
 ### If Mobile
 
